@@ -84,18 +84,18 @@ namespace CSATExcelSorting {
         /// </summary>
         private void addLocalResolutionGroups() {
             var thisOne = new Site("This");
-            thisOne.Groups.Add(new ResolutionGroup("This.DISP", "Dispatch"));
-            LocalSitesDataGrid.Add(thisOne);    //index 0
+            thisOne.Groups.Add(new ResolutionGroup("THIS.DISP", "Dispatch"));
+            LocalSitesDataGrid.Add(thisOne);        //index 0
 
             var ThatOne = new Site("That");
-            ThatOne.Groups.Add(new ResolutionGroup("That.DISP", "Dispatch"));
-            ThatOne.Groups.Add(new ResolutionGroup("That.KIOSK", "Kiosk"));
-            LocalSitesDataGrid.Add(ThatOne);      //index 1
+            ThatOne.Groups.Add(new ResolutionGroup("THAT.DISP", "Dispatch"));
+            ThatOne.Groups.Add(new ResolutionGroup("THAT.KIOSK", "Kiosk"));
+            LocalSitesDataGrid.Add(ThatOne);        //index 1
 
             var TheOther = new Site("TheOther");
-            TheOther.Groups.Add(new ResolutionGroup("TheOther.DISP", "Dispatch"));
-            TheOther.Groups.Add(new ResolutionGroup("TheOther.SITE", "Site"));
-            LocalSitesDataGrid.Add(TheOther);      //index 2
+            TheOther.Groups.Add(new ResolutionGroup("THEOTHER.DISP", "Dispatch"));
+            TheOther.Groups.Add(new ResolutionGroup("THEOTHER.SITE", "Site"));
+            LocalSitesDataGrid.Add(TheOther);       //index 2
         }
 
         /// <summary>
@@ -103,20 +103,20 @@ namespace CSATExcelSorting {
         /// </summary>
         private void addRemoteResolutionGroups() {
             var Foo = new Site("Foo");
-            Foo.Groups.Add(new ResolutionGroup("Foo.DISP", "Dispatch"));
-            Foo.Groups.Add(new ResolutionGroup("Foo.KIOSK", "Kiosk"));
-            Foo.Groups.Add(new ResolutionGroup("Foo.SITE", "Site"));
-            RemoteSitesDataGrid.Add(Foo);    //index 0
+            Foo.Groups.Add(new ResolutionGroup("FOO.DISP", "Dispatch"));
+            Foo.Groups.Add(new ResolutionGroup("FOO.KIOSK", "Kiosk"));
+            Foo.Groups.Add(new ResolutionGroup("FOO.SITE", "Site"));
+            RemoteSitesDataGrid.Add(Foo);           //index 0
 
             var Bar = new Site("Bar");
-            Bar.Groups.Add(new ResolutionGroup("Bar.DISP", "Dispatch"));
-            Bar.Groups.Add(new ResolutionGroup("Bar.SITE", "Site"));
-            RemoteSitesDataGrid.Add(Bar);    //index 1
+            Bar.Groups.Add(new ResolutionGroup("BAR.DISP", "Dispatch"));
+            Bar.Groups.Add(new ResolutionGroup("BAR.SITE", "Site"));
+            RemoteSitesDataGrid.Add(Bar);           //index 1
 
             var Foobar = new Site("Foobar");
-            Foobar.Groups.Add(new ResolutionGroup("Foobar.DISP", "Dispatch"));
-            Foobar.Groups.Add(new ResolutionGroup("Foobar.SITE", "Site"));
-            LocalSitesDataGrid.Add(Foobar);      //index 2
+            Foobar.Groups.Add(new ResolutionGroup("FOOBAR.DISP", "Dispatch"));
+            Foobar.Groups.Add(new ResolutionGroup("FOOBAR.SITE", "Site"));
+            RemoteSitesDataGrid.Add(Foobar);         //index 2
         }
 
         /// <summary>
